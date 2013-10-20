@@ -36,6 +36,7 @@
       //Your JavaScript code will go right here!
       
 
+      
       //message object equivalent of Chat  
       var message = {};
       var userMessage;
@@ -49,28 +50,12 @@
         $(messageList).append('<li>'+messageStr+'</li>');
           
       };
-      
-     //my implementation of Chat.fetch
-     /*
-     message.fetch = function(){
-
-        $.ajax('', {
-
-            success: function(){
-              console.log("ajax pull success!");
-            };
 
 
-        });
-     };
-     */
+       var refreshMsg = function() {
 
-
-
-       //var refreshMsg = function() {
-
-         // Chat.fetch( function(arr){message.display(arr[0])});
-       //};
+          Chat.fetch( function(arr){message.display(arr[0])});
+       };
 
 
 
